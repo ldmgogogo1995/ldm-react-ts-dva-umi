@@ -1,13 +1,19 @@
 import { defineConfig } from 'umi';
-
+import routes from './route';
 export default defineConfig({
+  hash: true,
   favicon: '/fugangyiyong.jpg',
+  antd: {
+    config: {},
+  },
   layout: {
     name: '带明的厕所',
-    locale: false,
+    lacale: false,
+    siderWidth: 228,
   },
+  locale: false,
   nodeModulesTransform: {
     type: 'none',
   },
-  routes: [{ path: '/', component: '@/pages/index' }],
+  routes: routes,
 });
