@@ -32,12 +32,12 @@
       },
     ],
   },
-  // {
-  //   name: 'list.table-list',
-  //   icon: 'table',
-  //   path: '/list',
-  //   component: './ListTableList',
-  // },
+  {
+    name: 'list.table-list',
+    icon: 'table',
+    path: '/list',
+    component: './ListTableList',
+  },
   {
     name:'authority-center',
     icon:'table',

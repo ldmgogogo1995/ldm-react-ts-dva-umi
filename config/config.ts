@@ -13,7 +13,7 @@ export default defineConfig({
     hmr: true,
   },
   layout: {
-    name: '带明的厕所',
+    name: '带明的小屋',
     locale: true,
     siderWidth: 208,
     ...defaultSettings,

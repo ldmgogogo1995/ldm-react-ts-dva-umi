@@ -7,8 +7,8 @@ export default () => (
     copyright="2020 罗大侠个人出品"
     links={[
       {
-        key: 'csnd',
-        title: 'csnd',
+        key: 'CSND',
+        title: 'CSND',
         href: 'https://blog.csdn.net/weixin_46198494?spm=1001.2100.3001.5113',
         blankTarget: true,
       },

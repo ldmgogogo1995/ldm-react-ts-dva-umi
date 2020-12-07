@@ -1,5 +1,5 @@
 export default {
-  'pages.layouts.userLayout.title': '罗大明拉屎的地方',
+  'pages.layouts.userLayout.title': '放平心态，偷偷厉害',
   'pages.login.accountLogin.tab': '账户密码登录',
   'pages.login.accountLogin.errorMessage': '错误的用户名和密码（admin/ant.design)',
   'pages.login.username.placeholder': '用户名: admin or user',

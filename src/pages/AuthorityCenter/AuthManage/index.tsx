@@ -1,6 +1,11 @@
 import React from 'react';
-interface Props {}
-const AuthList: React.FC<Props> = ({}) => {
-  return <div>AuthList</div>;
+import { PageContainer } from '@ant-design/pro-layout';
+interface Props { }
+const AuthList: React.FC<Props> = ({ }) => {
+  return (
+    <PageContainer>
+      AuthList
+    </PageContainer>
+  )
 };
 export default AuthList
