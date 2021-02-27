@@ -32,6 +32,7 @@ export async function getInitialState(): Promise<{
   // 如果是登录页面，不执行
   if (history.location.pathname !== '/user/login') {
     const currentUser = await fetchUserInfo();
+    console.log(defaultSettings,fetchUserInfo,'aaa')
     return {
       fetchUserInfo,
       currentUser,
@@ -92,6 +93,7 @@ const codeMessage = {
  */
 const errorHandler = (error: ResponseError) => {
   const { response } = error;
+  console.log(error,response,'?????????');
   if (response && response.status) {
     const errorText = codeMessage[response.status] || response.statusText;
     const { status, url } = response;

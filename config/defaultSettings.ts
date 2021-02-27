@@ -10,7 +10,7 @@ const Settings: LayoutSettings & {
   layout: 'mix',
   contentWidth: 'Fluid',
   fixedHeader: false,
-  fixSiderbar: true,
+   fixSiderbar: true,
   colorWeak: false,
   title: '带明的厕所',
   pwa: false,

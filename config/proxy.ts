@@ -3,14 +3,14 @@
  * The agent cannot take effect in the production environment
  * so there is no configuration of the production environment
  * For details, please see
- * https://pro.ant.design/docs/deploy
+ *  
  */
 export default {
   dev: {
-    '/api/': {
-      target: 'https://preview.pro.ant.design',
+    '/api': {
+      target: 'http://192.168.101.5:8088/',
       changeOrigin: true,
-      pathRewrite: { '^': '' },
+      pathRewrite: { '^/api': '/' },
     },
   },
   test: {
