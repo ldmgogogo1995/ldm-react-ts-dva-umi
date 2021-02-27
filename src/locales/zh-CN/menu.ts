@@ -1,5 +1,5 @@
 export default {
-  'menu.welcome': '欢迎来到我的厕所',
+  'menu.welcome': '欢迎来到我的小屋',
   'menu.more-blocks': '更多区块',
   'menu.home': '首页',
   'menu.admin': '管理页',

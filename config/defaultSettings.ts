@@ -12,7 +12,7 @@ const Settings: LayoutSettings & {
   fixedHeader: false,
    fixSiderbar: true,
   colorWeak: false,
-  title: '带明的厕所',
+  title: '带明的小屋',
   pwa: false,
   logo: 'yiyong.svg',
   iconfontUrl: '',

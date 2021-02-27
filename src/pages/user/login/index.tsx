@@ -87,10 +87,10 @@ const Login: React.FC<{}> = () => {
           <div className={styles.header}>
             <Link to="/">
               <img alt="logo" className={styles.logo} src="/yiyong.svg" />
-              <span className={styles.title}>带明的厕所</span>
+              <span className={styles.title}>带明的小屋</span>
             </Link>
           </div>
-          <div className={styles.desc}>罗大明拉屎的地方</div>
+          <div className={styles.desc}>放平心态，偷偷厉害</div>
         </div>
 
         <div className={styles.main}>
