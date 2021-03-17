@@ -7,7 +7,7 @@ import { getUserList } from './service'
 import {
   Table
 } from 'antd'
-import { FuncComp } from '@/types/commen';
+import { FuncComp } from '@/types/commom;
 
 const AuthList: FuncComp = () => {
   const { data, loading, error } = useRequest(getUserList)
