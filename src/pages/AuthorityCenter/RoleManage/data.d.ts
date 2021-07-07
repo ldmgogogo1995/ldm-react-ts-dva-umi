@@ -1,5 +1,5 @@
 export interface UserListItem  {
-    id?: string;
+    id: number;
     account?: string;
     password?: string;
     name?: string

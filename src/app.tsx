@@ -32,7 +32,6 @@ export async function getInitialState(): Promise<{
   // 如果是登录页面，不执行
   if (history.location.pathname !== '/user/login') {
     const currentUser = await fetchUserInfo();
-    console.log(defaultSettings,fetchUserInfo,'aaa')
     return {
       fetchUserInfo,
       currentUser,
@@ -60,9 +59,9 @@ export const layout = ({
       const { currentUser } = initialState;
       const { location } = history;
       // 如果没有登录，重定向到 login
-      if (!currentUser && location.pathname !== '/user/login') {
-        history.push('/user/login');
-      }
+      // if (!currentUser && location.pathname !== '/user/login') {
+      //   history.push('/user/login');
+      // }
     },
     menuHeaderRender: undefined,
     ...initialState?.settings,
@@ -93,7 +92,7 @@ const codeMessage = {
  */
 const errorHandler = (error: ResponseError) => {
   const { response } = error;
-  console.log(error,response,'?????????');
+  console.log(error, response, '?????????');
   if (response && response.status) {
     const errorText = codeMessage[response.status] || response.statusText;
     const { status, url } = response;

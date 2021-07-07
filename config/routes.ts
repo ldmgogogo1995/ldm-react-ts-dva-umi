@@ -1,16 +1,16 @@
 ﻿export default [
-  {
-    path: '/user',
-    layout: false,
-    routes: [
-      {
-        name: 'login',
-        path: '/user/login',
-        component: './user/login',
-        // component: './Welcome',
-      },
-    ],
-  },
+  // {
+  //   path: '/user',
+  //   layout: false,
+  //   routes: [
+  //     {
+  //       name: 'login',
+  //       path: '/user/login',
+  //       // component: './user/login',
+  //       component: './Welcome',
+  //     },
+  //   ],
+  // },
   {
     path: '/welcome',
     name: 'welcome',
@@ -39,24 +39,30 @@
     component: './ListTableList',
   },
   {
-    name:'authority-center',
-    icon:'table',
-    path:'/authority',
+    name: 'authority-center',
+    icon: 'table',
+    path: '/authority',
     // component:'./AuthorityCenter/AuthManage',
-    routes:[
+    routes: [
       {
-        name:'auth-manage',
-        icon:'table',
-        path:'/authority/manage',
-        component:'./AuthorityCenter/AuthManage',
+        name: 'auth-manage',
+        icon: 'table',
+        path: '/authority/manage',
+        component: './AuthorityCenter/RoleManage',
       }
     ]
+  },
+  {
+    name: 'demo',
+    icon: 'table',
+    path: '/demo',
+    component: './Demo',
   },
   {
     path: '/',
     redirect: '/welcome',
   },
-  {
-    component: './404',
-  },
+  // {
+  //   component: './404',
+  // },
 ];
