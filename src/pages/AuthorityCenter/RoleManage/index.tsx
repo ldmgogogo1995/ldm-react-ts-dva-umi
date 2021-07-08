@@ -7,7 +7,7 @@ import {
   Divider,
   Table
 } from 'antd'
-import { FuncComp } from '@/types/commen';
+import { FuncComp } from '@/types/commom';
 import RoleDetail from './Detail'
 import { getUserDetail, getUserList } from './service'
 import { UserListItem } from './data'
