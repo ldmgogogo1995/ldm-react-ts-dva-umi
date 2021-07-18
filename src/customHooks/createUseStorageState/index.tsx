@@ -18,5 +18,15 @@ function isFunction<T>(obj: any): obj is T {
     return typeof obj === 'function'
 }
 export const createUseStorageState = (nullishStorage: Storage | null) => {
-
+    //重载
+    function useStorageState<T = undefined>(key: string): StorageStateResult<T>;
+    function useStorageState<T>(
+        key: string,
+        defaultValue: T | IFuncUpdater<T>
+    ): StorageStateResultHasDefaultValue<T>
+    //实现
+    function useStorageState<T>(key: string, defaultValue?: T | IFuncUpdater<T>) {
+        return defaultValue
+    }
 }
+const updateState = useCallback()
